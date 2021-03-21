@@ -1,270 +1,2026 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-    <script nomodule>document.location.href = '/unsupported';</script>
-    <title>Make Images, Videos and Web Stories for Free in Minutes | Adobe Spark</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
-<script type="text/javascript">
-;window.NREUM||(NREUM={});NREUM.init={privacy:{cookies_enabled:true}};
-window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(22),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(23),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(23),a=t(22);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(19),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(22),c=t(23),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(21),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],19:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],20:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],21:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],22:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],23:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],24:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?s(t,c,o):o()}function n(n,r,i,o){if(!l.aborted||o){t&&t(n,r,i);for(var a=e(i),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||i(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:a,aborted:!1};return x}function o(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(22),u={},d={},l=e.exports=i();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+b.offset],null,"api"),s("timing",["load",n]);var r=p.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===p.readyState&&o()}function o(){s("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-b.offset}var c=(new Date).getTime(),s=t("handle"),f=t(22),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1177.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:c,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",o,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",i),l[m]("onload",r)),s("mark",["firstbyte",c],null,"api");var E=0,R=t(24)},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var i=t("ee"),o=t(23),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,i){function nrWrapper(){var r,a,c,s;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,i],c])}u(e+"start",[r,a,i],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,i,o){i||(i="");var a,c,s,f="-"===i.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+i:i,o,c))}function u(n,r,i){if(!s||e){var o=s;s=!0;try{t.emit(n,r,i,e)}catch(a){l([a,n,r,i])}s=o}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var i in t)c.call(t,i)&&(e[i]=t[i]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=i),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,12,4,3]);
-;NREUM.loader_config={accountID:"1013487",trustKey:"1322840",agentID:"33883158",licenseKey:"476fdc8ce5",applicationID:"12026147"}
-;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"476fdc8ce5",applicationID:"12026147",sa:1}
-</script>
-<script>window._imsLocale = "en_US"</script>
-<script src="&#x2F;m-setup-c3b2a774.js" defer></script>
-<script src="https://static.adobelogin.com&#x2F;imslib/imslib.min.js" defer></script>
-<link rel="shortcut icon" href="/images/sparkfavicon_v2.ico">
+    <meta charset="utf-8">
+    <title>Tourist Promotion</title>
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
 
-    <link rel="preload" href="https://use.typekit.net/vtg4qoo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://use.typekit.net/vtg4qoo.css"></noscript>
-<script>(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}}();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){if(link.addEventListener){link.removeEventListener("load",enableStylesheet)}else if(link.attachEvent){link.detachEvent("onload",enableStylesheet)}link.setAttribute("onload",null);link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3e3)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}})(typeof global!=="undefined"?global:this);</script>
-    <link rel="manifest" href="/static/manifest.json" />
-    <meta name="apple-itunes-app" content="app-id=1051937863, affiliate-data=pt=212564&ct=sparkMobileBannerMainPost">
-<link rel="preconnect" href="https://sstats.adobe.com"> 
-<link rel="preconnect" href="https://assets.adobedtm.com"> 
-<link rel="preconnect" href="https://cdn.cookielaw.org"> 
-<script>
-  window.fedsConfig = window.fedsConfig || {};
-  window.fedsConfig.privacy = window.fedsConfig.privacy || {};
-  window.fedsConfig.privacy.otDomainId = '7a5eb705-95ed-4cc4-a11d-0cc5760e93db';
-  window.fedsConfig.privacy.footerLinkSelector = '#openCookieModal';
+    <meta name="robots" content="noindex">
 
-  function handleConsentSettings() {
-    try {
+    <meta property="og:title" content="Tourist Promotion">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://spark.adobe.com/page/R9eYAGswYvl5h/embed.jpg?buster=1616303699401">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="512">
+    <meta property="og:site_name" content="Adobe Spark">
+    <meta property="og:description" content="A story told with Adobe Spark">
 
-      if(!window.adobePrivacy || window.adobePrivacy.hasUserProvidedCustomConsent()) {
-        window.sprk_full_consent = false;
-        return;
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tourist Promotion">
+    <meta name="twitter:image:src" content="https://spark.adobe.com/page/R9eYAGswYvl5h/embed.jpg?buster=1616303699401">
+    <meta name="twitter:description" content="A story told with Adobe Spark">
+
+    <link rel="apple-touch-icon" href="https://spark.adobe.com/page/R9eYAGswYvl5h/embed.jpg?buster=1616303699401">
+    <link rel="shortcut icon" href="https://page.adobespark-assets.com/runtime/1.22/images/favicon.ico">
+
+    <meta property="fb:app_id" content="919039361464473">
+    <meta name="twitter:site" content="@AdobeSpark">
+
+    <script src="https://page.adobespark-assets.com/runtime/1.22/base-fonts.gz.js"></script>
+    <script src="https://page.adobespark-assets.com/runtime/1.22/themes/crisp-fonts.gz.js"></script>
+    <script src="https://page.adobespark-assets.com/runtime/1.22/typekit-load.gz.js"></script>
+    <link href="https://page.adobespark-assets.com/runtime/1.22/runtime.gz.css" type="text/css" rel="stylesheet">
+    <style>
+      /* custom-theme base */
+
+      .crisp-theme .single-column-section .section-background,
+      .crisp-theme .title-section {
+        background-color: #9aa6af;
       }
 
-      if(window.adobePrivacy.hasUserProvidedConsent()) {
-        window.sprk_full_consent = true;
-      } else {
-        window.sprk_full_consent = false;
+      .crisp-theme .title-header {
+        height: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 0;
       }
 
-    } catch(e) {
-      console.warn("Couldn't determine user consent status:", e);
-      window.sprk_full_consent = false;
-    }
+      .crisp-theme .title-top-left .title-header,
+      .crisp-theme .title-left .title-header,
+      .crisp-theme .title-bottom-left .title-header {
+        text-align: left;
+      }
+      .crisp-theme .title-top .title-header,
+      .crisp-theme .title-center .title-header,
+      .crisp-theme .title-bottom .title-header {
+        text-align: center;
+      }
+      .crisp-theme .title-top-right .title-header,
+      .crisp-theme .title-right .title-header,
+      .crisp-theme .title-bottom-right .title-header {
+        text-align: right;
+      }
 
+      .crisp-theme .title-header:before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: bottom;
+      }
+
+      .crisp-theme .title-top-left .title-header:before,
+      .crisp-theme .title-top .title-header:before,
+      .crisp-theme .title-top-right .title-header:before {
+        vertical-align: top;
+      }
+
+      .crisp-theme .title-left .title-header:before,
+      .crisp-theme .title-center .title-header:before,
+      .crisp-theme .title-right .title-header:before {
+        vertical-align: middle;
+      }
+
+      .crisp-theme .title-header-view {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .crisp-theme .title-header .gradient-overlay {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: -webkit-linear-gradient( -270deg /*[gradient-angle-aligned-center]*/, rgba(0,0,0,0)  /*[gradient-stop-0-color-aligned-center]*/ 0% /*[gradient-stop-0-percent-aligned-center]*/, rgba(0,0,0,0.25)  /*[gradient-stop-1-color-aligned-center]*/ 25% /*[gradient-stop-1-percent-aligned-center]*/, rgba(0,0,0,0.50)  /*[gradient-stop-2-color-aligned-center]*/ 50% /*[gradient-stop-2-percent-aligned-center]*/, rgba(0,0,0,0.25)  /*[gradient-stop-3-color-aligned-center]*/ 75% /*[gradient-stop-3-percent-aligned-center]*/, rgba(0,0,0,0)  /*[gradient-stop-4-color-aligned-center]*/ 100% /*[gradient-stop-4-percent-aligned-center]*/);
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.50) 50%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0) 100%);
+      }
+
+      .crisp-theme .title-top-left .title-header .gradient-overlay,
+      .crisp-theme .title-top .title-header .gradient-overlay,
+      .crisp-theme .title-top-right .title-header .gradient-overlay {
+        background-image: -webkit-linear-gradient( -270deg /*[gradient-angle-aligned-top]*/, rgba(0,0,0,0)  /*[gradient-stop-0-color-aligned-top]*/ 0% /*[gradient-stop-0-percent-aligned-top]*/, rgba(0,0,0,0.5)  /*[gradient-stop-1-color-aligned-top]*/ 100% /*[gradient-stop-1-percent-aligned-top]*/);
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      }
+
+      .crisp-theme .title-bottom-left .title-header .gradient-overlay,
+      .crisp-theme .title-bottom .title-header .gradient-overlay,
+      .crisp-theme .title-bottom-right .title-header .gradient-overlay {
+        background-image: -webkit-linear-gradient( -270deg /*[gradient-angle-aligned-bottom]*/, rgba(0,0,0,0.5) /*[gradient-stop-0-color-aligned-bottom]*/ 0% /*[gradient-stop-0-percent-aligned-bottom]*/, rgba(0,0,0,0) /*[gradient-stop-1-color-aligned-bottom]*/ 100% /*[gradient-stop-1-percent-aligned-bottom]*/);
+        background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+      }
+
+      .crisp-theme .card-flipbook-section .section-content .content-container {
+        box-shadow: 0 0 4px rgba(0,0,0,.25);
+      }
+
+      .crisp-theme .card-flipbook-section .section-content .card-right .content-container {
+        margin-left: auto;
+      }
+
+      .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* crisp-theme components */
+
+      .crisp-theme.article,
+.crisp-theme .section {
+  background-color: rgba(255,255,255,1);
+}
+
+.crisp-theme .section-content .content-container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/*
+ * Browsers vary in their default behavior of <b>/<strong> tags. Some default to
+ * font-weight: bold (Chrome) and others default to font-weight: bolder (Firefox).
+ * We explicitly match Chrome's behavior here so that font face fallback logic
+ * is consistent between browsers (MRVL-15001)
+ */
+.crisp-theme strong,
+.crisp-theme b {
+  font-weight: bold;
+}
+
+/* title-section gradient-overlay treatment */
+
+.crisp-theme .title-section {
+  background-color: #9aa6af;
+}
+.crisp-theme .title-header {
+  padding: 64px 5% 64px 5%;
+  background-color: transparent;
+}
+.crisp-theme .title-header-view {
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  max-width: 89%;
+  background-color: transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+.crisp-theme .title-header .gradient-overlay {
+  right: -25%;
+  left: -25%;
+}
+.crisp-theme .title-top-left .title-header .gradient-overlay,
+.crisp-theme .title-top .title-header .gradient-overlay,
+.crisp-theme .title-top-right .title-header .gradient-overlay {
+  top: -64px;
+  bottom: -50%;
+  height: auto;
+}
+.crisp-theme .title-bottom-left .title-header .gradient-overlay,
+.crisp-theme .title-bottom .title-header .gradient-overlay,
+.crisp-theme .title-bottom-right .title-header .gradient-overlay {
+  top: -50%;
+  bottom: -64px;
+  height: auto;
+}
+.crisp-theme .title-header .title {
+  margin: 0 0;
+  padding: 0 0;
+  max-height: 3.1395em;
+  color: rgba(255,255,255,1);
+  font-family: proxima-nova,sans-serif;
+  font-size: 94px;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: none;
+  line-height: 1.0465;
+  letter-spacing: normal;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+}
+.crisp-theme .title-header .subtitle {
+  margin-top: 1rem;
+  padding: 0;
+  max-height: 4.8149999999999995em;
+  color: rgba(255,255,255,1);
+  font-family: proxima-nova,sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.605;
+  letter-spacing: normal;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.25);
+}
+@media ( max-width: 767px ) {
+  .crisp-theme .title-header {
+    padding: 32px 5% 32px 5%;
   }
-  window.addEventListener("adobePrivacy:PrivacyConsent", handleConsentSettings);
-  window.addEventListener("adobePrivacy:PrivacyReject", handleConsentSettings);
-  window.addEventListener("adobePrivacy:PrivacyCustom", handleConsentSettings);
+}
 
-  window.marketingtech = {
-      adobe: {
-          launch: {
-              property: 'global',
-              environment: 'production'
-          },
-          analytics: {
-              additionalAccounts: 'adbemmarvelweb.prod'
-          },
-          target: false,
-          audienceManager: false
+/* Wide Screen Widths */
+
+@media (min-width: 1300px) {
+  /* each pair of title padding values should sum to 30% */
+  .crisp-theme .title-top-left .title-header-view,
+  .crisp-theme .title-left .title-header-view,
+  .crisp-theme .title-bottom-left .title-header-view {
+    padding-left: 10%;
+    padding-right: 20%;
+  }
+  .crisp-theme .title-top .title-header-view,
+  .crisp-theme .title-center .title-header-view,
+  .crisp-theme .title-bottom .title-header-view{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .crisp-theme .title-top-right .title-header-view,
+  .crisp-theme .title-right .title-header-view,
+  .crisp-theme .title-bottom-right .title-header-view {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+}
+
+/* Extra Wide Screen Widths */
+
+@media (min-width: 1800px) {
+  /* each pair of title padding values should sum to 50% */
+  .crisp-theme .title-top-left .title-header-view,
+  .crisp-theme .title-left .title-header-view,
+  .crisp-theme .title-bottom-left .title-header-view {
+    padding-left: 15%;
+    padding-right: 35%;
+  }
+  .crisp-theme .title-top .title-header-view,
+  .crisp-theme .title-center .title-header-view,
+  .crisp-theme .title-bottom .title-header-view {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .crisp-theme .title-top-right .title-header-view,
+  .crisp-theme .title-right .title-header-view,
+  .crisp-theme .title-bottom-right .title-header-view {
+    padding-left: 35%;
+    padding-right: 15%;
+  }
+}
+
+/* Super Wide Screen Widths */
+
+@media (min-width: 2300px) {
+  /* each pair of title padding values should sum to 60% */
+  .crisp-theme .title-top-left .title-header-view,
+  .crisp-theme .title-left .title-header-view,
+  .crisp-theme .title-bottom-left .title-header-view {
+    padding-left: 20%;
+    padding-right: 40%;
+  }
+  .crisp-theme .title-top .title-header-view,
+  .crisp-theme .title-center .title-header-view,
+  .crisp-theme .title-bottom .title-header-view {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .crisp-theme .title-top-right .title-header-view,
+  .crisp-theme .title-right .title-header-view,
+  .crisp-theme .title-bottom-right .title-header-view {
+    padding-left: 40%;
+    padding-right: 20%;
+  }
+}
+
+
+@media ( max-width: 767px ) {
+  .crisp-theme .title-header .title {
+    font-size: 50px;
+  }
+}
+@media ( max-width: 767px ) {
+  .crisp-theme .title-header .subtitle {
+    font-size: 20px;
+  }
+}
+
+/* heading no treatment */
+
+.crisp-theme .content-container h3 {
+  z-index: 0;
+  font-family: proxima-nova,sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.1500000000000001;
+  letter-spacing: normal;
+  color: rgba(0,0,0,1);
+  text-align: left;
+}
+
+
+
+
+@media ( max-width: 767px ) {
+  .crisp-theme .content-container h3 {
+    font-size: 36px;
+  }
+}
+
+.crisp-theme .content-container h4 {
+  font-family: proxima-nova,sans-serif;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: rgba(0,0,0,1);
+  text-align: left;
+}
+
+@media ( max-width: 767px ) {
+  .crisp-theme .content-container h4 {
+    font-size: 21px;
+  }
+}
+.crisp-theme .single-column-section .content-container p,
+.crisp-theme .card-flipbook-section .content-container p {
+  font-family: proxima-nova,sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgba(17,26,11,1);
+}
+
+@media ( max-width: 767px ) {
+  .crisp-theme .single-column-section .content-container p,
+  .crisp-theme .card-flipbook-section .content-container p {
+    font-size: 18px;
+  }
+}
+.crisp-theme .content-container ul li {
+  font-family: proxima-nova,sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgba(17,26,11,1);
+  margin-left: 36px;
+  margin-right: 0px;
+}
+
+@media ( max-width: 767px ) {
+  .crisp-theme .content-container ul li {
+    font-size: 18px;
+  }
+}
+.crisp-theme .content-container ol li {
+  font-family: proxima-nova,sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgba(17,26,11,1);
+  margin-left: 36px;
+  margin-right: 0px;
+}
+
+@media ( max-width: 767px ) {
+  .crisp-theme .content-container ol li {
+    font-size: 18px;
+  }
+}
+
+
+
+
+/* blockquote left rule treatment */
+
+.crisp-theme .content-container blockquote {
+  z-index: 0;
+  position: relative;
+  font-family: proxima-nova-condensed,sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.2449999999999999;
+  letter-spacing: normal;
+  color: rgba(0,0,0,1);
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.crisp-theme .content-container blockquote:before {
+  content: "";
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  right: auto;
+  bottom: 0px;
+  left: 0px;
+  width: 5px;
+  background-color: rgba(0,0,0,0.9);
+}
+
+
+@media ( max-width: 767px ) {
+  .crisp-theme .content-container blockquote {
+    font-size: 27px;
+  }
+}
+
+.crisp-theme .image-wrapper {
+  overflow: hidden;
+}
+
+/* inline image no treatment */
+
+.crisp-theme .card-flipbook-section .caption, .crisp-theme .single-column-section .caption {
+  font-family: proxima-nova,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgba(17,26,11,1);
+  text-align: center;
+  margin: .5em 0px;
+}
+
+
+
+@media ( max-width: 767px ) {
+  .crisp-theme .card-flipbook-section .caption, .crisp-theme .single-column-section .caption {
+    font-size: 16px;
+  }
+}
+
+
+/* button rounded treatment */
+
+.crisp-theme .content-container a.link-button {
+  display: inline-block;
+  border-radius: 0.2em;
+  border: solid 1px rgba(0,0,0,1);
+  padding-top: 7px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 7px;
+  font-family: proxima-nova,sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(0,0,0,1);
+
+  -webkit-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  -moz-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  -o-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  -ms-transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  transition: color .15s linear, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.crisp-theme .content-container a.link-button:hover {
+  border-color: rgba(38,38,38,1);
+  color: rgba(38,38,38,1);
+}
+
+@media ( max-width: 767px ) {
+  .crisp-theme .content-container a.link-button {
+    padding-top: 5px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 5px;
+  }
+}
+
+
+
+
+@media ( max-width: 767px ) {
+  .crisp-theme .content-container a.link-button {
+    font-size: 18px;
+  }
+}
+
+.crisp-theme .single-column-section .content-container a:not(.link-button),
+.crisp-theme .card-flipbook-section .content-container a:not(.link-button),
+.crisp-theme .photo-grid-section    .content-container a:not(.link-button),
+.crisp-theme .full-width-section    .content-container a:not(.link-button) {
+  background-color: transparent;
+  color: rgba(82,159,198,1);
+  text-decoration: 
+underline;
+  -webkit-transition: color .15s linear;
+  -moz-transition: color .15s linear;
+  -o-transition: color .15s linear;
+  -ms-transition: color .15s linear;
+  transition: color .15s linear;
+}
+.crisp-theme .single-column-section .content-container a:not(.link-button):hover,
+.crisp-theme .card-flipbook-section .content-container a:not(.link-button):hover,
+.crisp-theme .photo-grid-section    .content-container a:not(.link-button):hover,
+.crisp-theme .full-width-section    .content-container a:not(.link-button):hover {
+  color: rgba(31,91,122,1);
+}
+
+
+/* full width image no treatment */
+
+.crisp-theme .full-width-section .caption {
+  font-family: proxima-nova,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgba(17,26,11,1);
+  text-align: center;
+  margin: .5em 0px;
+}
+.crisp-theme .full-width-section .caption {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+
+
+@media ( max-width: 767px ) {
+  .crisp-theme .full-width-section .caption {
+    font-size: 16px;
+  }
+}
+/* fillscreen section */
+
+
+.crisp-theme .fullscreen-photo-section .pull-quote {
+  position: absolute;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  left: 0px;
+  margin: 96px 32px;
+  padding: 24px;
+  max-width: 50%;
+  font-family: proxima-nova,sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+  color: rgba(0,0,0,1);
+  background-color: rgba(255,255,255,0.8);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.crisp-theme .fullscreen-photo-section .pull-quote .content-container {
+  color: rgba(0,0,0,1);
+}
+
+@media ( max-width: 767px ) {
+  .crisp-theme .fullscreen-photo-section .pull-quote {
+    font-size: 19px;
+    margin: 48px 16px;
+    padding: 12px;
+  }
+}
+
+
+/* window section */
+
+.crisp-theme .window-section .pull-quote {
+  position: absolute;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  left: 0px;
+  margin: 48px 32px;
+  padding: 24px;
+  max-width: 50%;
+  font-family: proxima-nova,sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+  color: rgba(17,26,11,1);
+  background-color: rgba(255,255,255,0.8);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.crisp-theme .window-section .pull-quote .content-container {
+  color: rgba(17,26,11,1);
+}
+
+@media ( max-width: 767px ) {
+  .crisp-theme .window-section .pull-quote {
+    font-size: 19px;
+    margin: 24px 16px;
+    padding: 12px;
+  }
+}
+
+
+
+/* photo grid no treatment */
+
+.crisp-theme .grid-caption {
+  margin: .5em 0px;
+  font-family: proxima-nova,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(17,26,11,1)
+}
+
+
+
+@media ( max-width: 767px ) {
+  .crisp-theme .grid-caption {
+    font-size: 16px;
+  }
+}
+
+.crisp-theme .card-flipbook-section .section-content .content-container {
+  background-color: rgba(255,255,255,0.9);
+}
+.crisp-theme .content-spacer {
+  height: 0.125rem;
+}
+.crisp-theme .content-item-spacer {
+  height: 5.000rem;
+}
+.crisp-theme .section .section-content .content-container {
+  padding-top: 2.500rem;
+  padding-bottom: 2.500rem;
+}
+.crisp-theme .full-width-section .section-content .content-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.crisp-theme .section.large-content-spacing-top .section-content .content-container {
+  padding-top: 5.000rem;
+}
+.crisp-theme .section.large-content-spacing-bottom .section-content .content-container {
+  padding-bottom: 5.000rem;
+}
+.crisp-theme .content-container > :first-child {
+  margin-top: 0;
+}
+.crisp-theme .content-container > :last-child {
+  margin-bottom: 0;
+}
+.crisp-theme ul,
+.crisp-theme ol {
+  padding: 0
+}
+.crisp-theme li {
+  margin-bottom: 0.500rem;
+}
+.crisp-theme li:last-child {
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + p{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + ol{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + ul{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + h3{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + h4{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + blockquote{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + .link-button-wrapper{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.crisp-theme .content-container p + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ol + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container ul + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h3 + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container h4 + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container blockquote + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container .link-button-wrapper + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .content-container div.image + div.image{
+  margin-top: 2.500rem;
+}
+.crisp-theme .photo-grid-section + .single-column-section h3:first-child,
+.crisp-theme .photo-grid-section + .single-column-section h4:first-child,
+.crisp-theme .photo-grid-section + .single-column-section blockquote:first-child {
+  margin-top: 2.500rem;
+}
+.crisp-theme .photo-grid-section + .single-column-section blockquote:last-child {
+  margin-top: 2.500rem;
+}
+@media (max-width: 767px) {
+  .crisp-theme .content-spacer {
+    height: 0.125rem;
+  }
+  .crisp-theme .content-item-spacer {
+    height: 2.500rem;
+  }
+  .crisp-theme .section .section-content .content-container {
+    padding-top: 1.250rem;
+    padding-bottom: 1.250rem;
+  }
+  .crisp-theme .full-width-section .section-content .content-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .crisp-theme .section.large-content-spacing-top .section-content .content-container {
+    padding-top: 2.500rem;
+  }
+  .crisp-theme .section.large-content-spacing-bottom .section-content .content-container {
+    padding-bottom: 2.500rem;
+  }
+  .crisp-theme .content-container > :first-child {
+    margin-top: 0;
+  }
+  .crisp-theme .content-container > :last-child {
+    margin-bottom: 0;
+  }
+  .crisp-theme ul,
+  .crisp-theme ol {
+    padding: 0
+  }
+  .crisp-theme li {
+    margin-bottom: 0.250rem;
+  }
+  .crisp-theme li:last-child {
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + p{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + ol{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + ul{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + h3{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + h4{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + blockquote{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + .link-button-wrapper{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .crisp-theme .content-container p + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ol + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container ul + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h3 + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container h4 + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container blockquote + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container .link-button-wrapper + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .content-container div.image + div.image{
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .photo-grid-section + .single-column-section h3:first-child,
+  .crisp-theme .photo-grid-section + .single-column-section h4:first-child,
+  .crisp-theme .photo-grid-section + .single-column-section blockquote:first-child {
+    margin-top: 1.250rem;
+  }
+  .crisp-theme .photo-grid-section + .single-column-section blockquote:last-child {
+    margin-top: 1.250rem;
+  }
+}
+
+
+
+/* Default Screen Widths */
+
+.crisp-theme .section-content .content-container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.crisp-theme .card-flipbook-section .section-content .content-container {
+  width: 50%;
+  margin: 32px 32px;
+  padding: 56px 32px;
+}
+
+.crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+  width: 65%;
+  max-width: 900px;
+}
+
+/* Narrow Screen Widths */
+
+@media (max-width: 768px) {
+  .crisp-theme .section-content .content-container {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+  .crisp-theme .card-flipbook-section .section-content .content-container {
+    width: 60%;
+    margin: 32px 32px;
+    padding: 56px 32px;
+  }
+  .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+    width: 75%;
+    max-width: 900px;
+  }
+}
+
+/* Extra Narrow Screen Widths */
+
+@media (max-width: 480px) {
+  .crisp-theme .section-content .content-container {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .crisp-theme .card-flipbook-section .section-content .content-container {
+    width: 70%;
+    margin: 18px 14px;
+    padding: 31px 13px;
+  }
+  .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+    width: 75%;
+    max-width: 900px;
+  }
+}
+
+/* Super Narrow Screen Widths */
+
+@media (max-width: 320px) {
+  .crisp-theme .section-content .content-container {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .crisp-theme .card-flipbook-section .section-content .content-container {
+    width: 70%;
+    margin: 18px 14px;
+    padding: 31px 12px;
+  }
+  .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+    width: 75%;
+    max-width: 900px;
+  }
+}
+
+/* Wide Screen Widths */
+
+@media (min-width: 1300px) {
+  .crisp-theme  .section-content .content-container {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .crisp-theme  .card-flipbook-section .section-content .content-container {
+    width: 40%;
+    margin: 32px 32px;
+    padding: 56px 32px;
+    max-width: 580px;
+  }
+  .crisp-theme  .card-flipbook-section .section-content .card-center .content-container {
+    width: 65%;
+    max-width: 900px;
+  }
+}
+
+/* Extra Wide Screen Widths */
+
+@media (min-width: 1800px) {
+  .crisp-theme .section-content .content-container {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .crisp-theme .card-flipbook-section .section-content .content-container {
+    width: 30%;
+    margin: 32px 80px;
+    padding: 56px 32px;
+    max-width: 580px;
+  }
+  .crisp-theme .card-flipbook-section .section-content .card-center .content-container {
+    width: 65%;
+    max-width: 900px;
+  }
+}
+
+/* Super Wide Screen Widths */
+
+@media (min-width: 2300px) {
+  .crisp-theme .section-content .content-container {
+    padding-left: 33%;
+    padding-right: 33%;
+  }
+
+  .crisp-theme  .card-flipbook-section .section-content .content-container {
+    width: 25%;
+    margin: 32px 80px;
+    padding: 56px 32px;
+    max-width: 580px;
+  }
+  .crisp-theme  .card-flipbook-section .section-content .card-center .content-container {
+    width: 65%;
+    max-width: 900px;
+  }
+}
+
+.crisp-theme .section.author-section .author-appreciation-container {
+  border-color: rgba(17,26,11,0.5);
+}
+.crisp-theme .section.author-section .author {
+  font-family: proxima-nova;
+  color: rgba(17,26,11,1);
+}
+
+.crisp-theme .section.author-section .appreciate-button {
+  color: rgba(17,26,11,0.5);
+  border-color: rgba(17,26,11,0.5);
+}
+
+.crisp-theme .section.author-section .appreciate-button:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
+}
+
+.crisp-theme .section.author-section .appreciate-button:after {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNiIvPjwvc3ZnPg==');
+}
+
+.crisp-theme .section.author-section .appreciate-button.appreciated:before {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
+}
+
+.crisp-theme .section.author-section .appreciate-button.appreciated:after {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDEpOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgZD0iTTE2LDI2TDIuOCwxNC40QzEuMSwxMi45LDAsMTAuNywwLDguNGMwLTIuMywxLTQuNSwyLjgtNkM0LjYsMC45LDYuOSwwLDkuMiwwYzIuNCwwLDQuNiwwLjgsNi40LDIuNGMwLjEsMC4xLDAuMywwLjMsMC40LDAuNGMwLjEtMC4xLDAuMy0wLjMsMC40LTAuNEMxOC4yLDAuOSwyMC41LDAsMjIuOCwwYzIuMywwLDQuNiwwLjgsNi40LDIuNEMzMSwzLjksMzIsNi4xLDMyLDguNGMwLDIuMy0xLDQuNS0yLjgsNkwxNiwyNnogTTkuMiw0LjdDOCw0LjcsNi45LDUuMiw2LDUuOUM1LjMsNi41LDQuOCw3LjQsNC44LDguNGMwLDEsMC41LDEuOSwxLjIsMi41bDEwLDguOGwxMC04LjhjMC43LTAuNiwxLjItMS41LDEuMi0yLjVjMC0xLTAuNS0xLjktMS4yLTIuNWMtMS45LTEuNS00LjUtMS41LTYuNCwwYy0wLjcsMC42LTEuMiwxLjUtMS4yLDIuNWgtNC44YzAtMS0wLjUtMS45LTEuMi0yLjVDMTEuNSw1LjEsMTAuNCw0LjcsOS4yLDQuN3oiLz48L3N2Zz4=');
+}
+
+.publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button:hover {
+  color: rgba(17,26,11,1);
+  border-color: rgba(17,26,11,1);
+}
+
+.publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button:active {
+  color: rgba(17,26,11,0.5);
+  border-color: rgba(17,26,11,0.5);
+}
+
+.publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button:active:after {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2Ii8+PC9zdmc+');
+}
+
+.publication-viewer.touch-disabled .crisp-theme .section.author-section .appreciate-button.appreciated:active:after {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBzdHlsZT0iZmlsbDpyZ2JhKDE3LDI2LDExLDAuNSk7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIiBkPSJNMTYsMjZMMi44LDE0LjRDMS4xLDEyLjksMCwxMC43LDAsOC40YzAtMi4zLDEtNC41LDIuOC02QzQuNiwwLjksNi45LDAsOS4yLDBjMi40LDAsNC42LDAuOCw2LjQsMi40YzAuMSwwLjEsMC4zLDAuMywwLjQsMC40YzAuMS0wLjEsMC4zLTAuMywwLjQtMC40QzE4LjIsMC45LDIwLjUsMCwyMi44LDBjMi4zLDAsNC42LDAuOCw2LjQsMi40QzMxLDMuOSwzMiw2LjEsMzIsOC40YzAsMi4zLTEsNC41LTIuOCw2TDE2LDI2eiBNOS4yLDQuN0M4LDQuNyw2LjksNS4yLDYsNS45QzUuMyw2LjUsNC44LDcuNCw0LjgsOC40YzAsMSwwLjUsMS45LDEuMiwyLjVsMTAsOC44bDEwLTguOGMwLjctMC42LDEuMi0xLjUsMS4yLTIuNWMwLTEtMC41LTEuOS0xLjItMi41Yy0xLjktMS41LTQuNS0xLjUtNi40LDBjLTAuNywwLjYtMS4yLDEuNS0xLjIsMi41aC00LjhjMC0xLTAuNS0xLjktMS4yLTIuNUMxMS41LDUuMSwxMC40LDQuNyw5LjIsNC43eiIvPjwvc3ZnPg==');
+}
+
+
+.crisp-theme .section.credits-section {
+  color: rgba(17,26,11,1);
+}
+
+      /* behaviors css */
+      /* Default content behaviors */
+
+.crisp-theme div.image {
+  -webkit-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -webkit-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -moz-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -moz-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -o-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -o-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -ms-transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), -ms-transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  transition: opacity .5s cubic-bezier(0.455, 0.030, 0.515, 0.955), transform .5s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+  opacity: 1;
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.crisp-theme div.image.hidden {
+  opacity: 0;
+
+  -webkit-transform: translate3d(0,40px,0);
+  -moz-transform: translate3d(0,40px,0);
+  -o-transform: translate3d(0,40px,0);
+  -ms-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
+}
+
+.crisp-theme .caption,
+.crisp-theme .grid-caption {
+  -webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+  opacity: 1;
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.crisp-theme .caption.hidden,
+.crisp-theme .grid-caption.hidden {
+  opacity: 0;
+
+  -webkit-transform: translate3d(20px,0,0);
+  -moz-transform: translate3d(20px,0,0);
+  -o-transform: translate3d(20px,0,0);
+  -ms-transform: translate3d(20px,0,0);
+  transform: translate3d(20px,0,0);
+}
+
+.crisp-theme blockquote {
+  -webkit-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -moz-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -moz-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -o-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -o-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -ms-transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), -ms-transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  transition: opacity .5s cubic-bezier(0.250, 0.460, 0.450, 0.940), transform .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+  opacity: 1;
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.crisp-theme blockquote.hidden {
+  opacity: 0;
+
+  -webkit-transform: translate3d(20px,0,0);
+  -moz-transform: translate3d(20px,0,0);
+  -o-transform: translate3d(20px,0,0);
+  -ms-transform: translate3d(20px,0,0);
+  transform: translate3d(20px,0,0);
+}
+
+
+      /* overrides to some alignments defined after component
+         styles to make sure they will override the component
+         defaults when they have the same specificity */
+
+      .crisp-theme .link-button-wrapper, /* default */
+      .crisp-theme .link-button-wrapper.link-left {
+        text-align: left;
       }
-  };
-</script>
-<script src="//www.adobe.com/marketingtech/main.min.js"></script>
-<script src="https://www.adobe.com/etc/beagle/public/globalnav/adobe-privacy/latest/privacy.min.js" async></script>
-<style type="text/css">
-.generic-loading-screen {
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background-color:#fff;
-    z-index:999
-}
 
-@keyframes fadeInFadeOutAnimation {
-    0% { opacity: .2 }
-    50% { opacity: 1 }
-    100% { opacity: .2 }
-}
+      .crisp-theme .link-button-wrapper.link-center {
+        text-align: center;
+      }
 
-@-o-keyframes fadeInFadeOutAnimation {
-    0% { opacity:.2 }
-    50% { opacity:1 }
-    100% { opacity:.2 }
-}
+      .crisp-theme .link-button-wrapper.link-right {
+        text-align: right;
+      }
 
-@-moz-keyframes fadeInFadeOutAnimation {
-    0% { opacity:.2 }
-    50% { opacity:1 }
-    100% { opacity:.2 }
-}
+      .crisp-theme p.text-left,
+      .crisp-theme h3.text-left,
+      .crisp-theme h4.text-left,
+      .crisp-theme .caption.text-left,
+      .crisp-theme .grid-caption.text-left {
+        text-align: left;
+      }
 
-@-webkit-keyframes fadeInFadeOutAnimation {
-    0% { opacity:.2 }
-    50% { opacity:1 }
-    100% { opacity:.2 }
-}
+      .crisp-theme .caption, /* defaults */
+      .crisp-theme .grid-caption,
 
-.generic-loading-screen > .logo {
-    -webkit-animation:fadeInFadeOutAnimation 6s infinite;
-    -moz-animation:fadeInFadeOutAnimation 6s infinite;
-    -o-animation:fadeInFadeOutAnimation 6s infinite;
-    animation:fadeInFadeOutAnimation 6s infinite
-}
-</style>
+      .crisp-theme p.text-center,
+      .crisp-theme h3.text-center,
+      .crisp-theme h4.text-center,
+      .crisp-theme .caption.text-center,
+      .crisp-theme .grid-caption.text-center {
+        text-align: center;
+      }
 
-        <link rel="prefetch" as="script" href="/theo-web/theo-web-app-entry_e2e93592-0b797cdc.js">
+      .crisp-theme p.text-right,
+      .crisp-theme h3.text-right,
+      .crisp-theme h4.text-right,
+      .crisp-theme .caption.text-right,
+      .crisp-theme .grid-caption.text-right {
+        text-align: right;
+      }
 
-    <link rel="preload" href="https:&#x2F;&#x2F;prod.adobeccstatic.com&#x2F;utilnav&#x2F;8.2&#x2F;utilitynav.js" as="script">
-    <link rel="preload" href="https:&#x2F;&#x2F;prod.adobeccstatic.com&#x2F;utilnav&#x2F;8.2&#x2F;utilitynav.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https:&#x2F;&#x2F;prod.adobeccstatic.com&#x2F;utilnav&#x2F;8.2&#x2F;utilitynav.css"></noscript>
+      .crisp-theme .caption-right .pull-quote {
+        right: 3%;
+        left: auto;
+        margin-left: 0;
+        margin-right: 2rem;
+      }
+    </style>
+    <noscript id="noscript-static-layout" data-href="https://page.adobespark-assets.com/runtime/1.22/noscript.gz.css">
+      <link href="https://page.adobespark-assets.com/runtime/1.22/noscript.gz.css" type="text/css" rel="stylesheet">
+    </noscript>
+    <!--BEGIN-BUMPER-STYLE-SHEET-->
+    <!--END-BUMPER-STYLE-SHEET-->
 </head>
-<body class="light spark-web pre-auth-no-header">
-<div class="generic-loading-screen"><svg xmlns="http://www.w3.org/2000/svg" class="logo" width="56" height="54"><defs><style>.cls-2{fill:#fa0f00}</style></defs><rect width="56" height="54" rx="9.91" fill="#370000" /></g></g><g><g><path class="cls-2" d="M18.05 38.37A18.68 18.68 0 0114.3 38a12.08 12.08 0 01-2.83-.91c-.2-.09-.3-.3-.3-.62v-4.12a.22.22 0 01.09-.2.25.25 0 01.25 0 11.84 11.84 0 003.29 1.17 12.74 12.74 0 003.4.48 5.28 5.28 0 003-.65 1.91 1.91 0 00.9-1.61 2.13 2.13 0 00-.29-1.12 3.1 3.1 0 00-1-1 11.61 11.61 0 00-2-1l-1.85-.78a13.89 13.89 0 01-3.54-2.05 6 6 0 01-1.75-2.35 7.53 7.53 0 01-.49-2.7 6.64 6.64 0 014-6.2 11.25 11.25 0 014.89-1 22.84 22.84 0 013.31.23 7.22 7.22 0 012.39.71.52.52 0 01.26.48v3.89c0 .05 0 .1-.1.16s-.14.06-.24 0a9.9 9.9 0 00-2.5-.65 14.11 14.11 0 00-3.19-.25 7.28 7.28 0 00-1.81.19 4.24 4.24 0 00-1.2.46 1.69 1.69 0 00-.68.7 1.89 1.89 0 00-.23.87 1.72 1.72 0 00.34 1.06 3.75 3.75 0 001.11.92 22.66 22.66 0 002.14 1.09l1.37.52a15 15 0 013.81 2.13 6.47 6.47 0 011.93 2.44 7.21 7.21 0 01.55 2.83A6.5 6.5 0 0126.18 35a7.44 7.44 0 01-3.24 2.53 12.2 12.2 0 01-4.89.84zM37.85 19.24A10.7 10.7 0 0142 20a8.21 8.21 0 012.89 2 8.68 8.68 0 011.72 2.87 9.88 9.88 0 01.57 3.36 9.76 9.76 0 01-.94 4.44 9.25 9.25 0 01-2.57 3.17 11.35 11.35 0 01-3.65 1.9 13.84 13.84 0 01-4.16.63H34.75v5.72a.31.31 0 01-.3.33c-.37 0-.4.06-.9.11l-1.46.15-1.22.11a3.87 3.87 0 00-.63.07c-.15 0-.23-.1-.23-.29V23.39v-.74-.95a5.74 5.74 0 00-.06-.72.2.2 0 01.15-.22c.62-.22 1.33-.44 2.13-.67s1.68-.41 2.63-.59a17 17 0 012.99-.26zm-.44 4.37a8.16 8.16 0 00-1.15.07c-.35.05-1.11.13-1.48.23V34c.15 0 .75 0 1 .05h.57a6.63 6.63 0 002.61-.54 4.85 4.85 0 002.13-1.75 5.52 5.52 0 00.85-3.22 5.26 5.26 0 00-1.18-3.67 4.29 4.29 0 00-3.35-1.26z"/></svg></div>
-<div class="cc-signin-screen hide">
-    <div class="cc-signin-bg-container">
-        <div class="cc-signin-bg"></div>
-        <img src="/images/login-bg-thumb-1.jpg">
-        <div class="cc-signin-bg cc-signin-bg-enhanced"></div>
-    </div>
-    <div class="cc-signin-container" data-auto="login-container">
-        <div class="cc-signin-dialog">
-            <div class="cc-signin-dialog-container">
-
-                <a href="/about"><img class="cc-signin-site-logo" src="/images/SPRK_color_v2@2x.svg"></a>
-                <h1 class="cc-signin-title">Welcome to Adobe Spark</h1>
-
-                <div class="cc-signin-buttons">
-                    <div class="cc-signin-dialog-col">
-                        <p><button type="button" class="signInWithGoogleBtn" data-auto="signInWithGoogleBtn">Continue with Google</button></p>
-                        <p><button type="button" class="signInWithFacebookBtn" data-auto="signInWithFacebookBtn">Continue with Facebook</button></p>
-                        <p><button type="button" class="signInWithAppleBtn" data-auto="signInWithAppleBtn">Continue with Apple</button></p>
-                        <p><button type="button" class="signUpWithAdobe signUpWithAdobeBtn" data-auto="signUpWithAdobeBtn">Sign up with email</button></p>
-                        <p><button type="button" class="ctaSignInSignUpLink signInWithAdobeBtn" data-auto="signInWithAdobeBtn">Log in with Adobe ID</button></p>
-                    </div>
-                    <div class="cc-signin-dialog-col"></div>
-                    <div class="cc-signin-dialog-col">
-                        <h4>Teacher or student?</h4>
-                        <p><button type="button" class="signInWithEdu signInWithEduBtn" data-auto="signInWithEduBtn">Log in with school account</button></p>
-                        <p><button type="button" class="signInWithClassCodeBtn studentClassCodeBtn">Enter class code</button></p>
-                    </div>
-                </div>
+<body class="">
+  <div id="app">
+    <div id="publication-viewer" class="publication-viewer">
+      <div id="luca-splash" class="splash">
+        <div class="background" style="background-image: url(images/a2a6b828-3374-468f-aaef-22511f60fd28.jpg?asset_id=5472aa52-599c-41e2-8868-b87e395c6f81&img_etag=%222b292db90f534129fd38e829e8624daa%22&size=1024); background-position: 50% 50%;"></div>
+        <div class="content">
+          <div class="logo"></div>
+          <div class="loading-label">Loading</div>
+          <div class="wp-progress-bar">
+            <div class="wp-progress-bar-clip">
+              <div class="wp-progress-bar-view"></div>
             </div>
+          </div>
         </div>
-        <ul class="cc-signin-about-links-container">
-            <li><a href="/about">What is Adobe Spark?</a></li>
-            <li><a href="https:&#x2F;&#x2F;spark.adobe.com&#x2F;make">Make it with Adobe Spark</a></li>
-            <li><a href="https:&#x2F;&#x2F;spark.adobe.com&#x2F;templates">Adobe Spark Templates</a></li>
-        </ul>
-    </div>
+      </div>
+            <div class="publication-view">
+        <div class="wp-swipe-panel-group">
+          <div class="wp-swipe-panel-group-view">
+              <div class="wp-swipe-panel-group-panel article-panel">
+                <div class="article crisp-theme sections-article-layout" data-article-type="sections-article">
+        <div class="section title-section title-center"  data-section-behavior="crisp-title"  data-layer="1" data-layer-name="over" data-scroll-after-animation="false">
+        <div class="section-view">
+          <div class="section-background">
+            <div role="img" class="section-background-image" style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="images/a2a6b828-3374-468f-aaef-22511f60fd28.jpg?asset_id=5472aa52-599c-41e2-8868-b87e395c6f81&img_etag=%222b292db90f534129fd38e829e8624daa%22&size=1024" data-image-width="1800" data-image-height="1350"></a></div>
+          </div>
+          <div class="title-header">
+            <h2 class="title-header-view">
+                <span class="gradient-overlay"></span>
+                <span class="title">Tourist Promotion</span>
+                <span class="subtitle">India is a land of great tourism potential. From Kashmir to Kanyakumari, from Arunachal Pradesh to Gujarat, every region has its own uniqueness and flavour. So Channapatna and Kasaragod are !!</span>
+            </h2>
+          </div>
+          <div class="navigation-hint down"></div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-top large-content-spacing-bottom" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <h3 class=" " >Channapatna</h3>
+                                <h4 class=" " >Land of Toys:Blog by Rajasudhangowda S A</h4>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section full-width-section" data-section-behavior="crisp-full-width-photo" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                      <div class="image">
+                  <div class="image-wrapper">
+                    <a href="images/4a3c2f38-70a6-4232-adf1-757f9d89fe2c.jpg?asset_id=3a8c63cb-9373-426d-acca-3d8a6ffba492&amp;img_etag=%225eb0915d2e9e0a23649a0b32432f75e9%22&amp;size=1024" class="image-viewer-link" target="_blank" rel="nofollow noreferrer"><span class="image-placeholder-link" data-href="images/4a3c2f38-70a6-4232-adf1-757f9d89fe2c.jpg?asset_id=3a8c63cb-9373-426d-acca-3d8a6ffba492&amp;img_etag=%225eb0915d2e9e0a23649a0b32432f75e9%22&amp;size=1024" style="width: 900px; padding-top: 50%" data-image-width="900" data-image-height="450"></span></a>
+                  </div>
+                </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-top" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <h4 class=" " >Channapatna</h4>
+                                <p class=" " >Channapatna toys are a particular form of wooden toys(and dolls)that are manufactured in the town of channapatna in the ramanagara district of karnataka state, India.Bavas Miyan is the father of channapatna toys, who sacrificed his life for channapatna toys.Ivory-wood was the main wood used in the making of these toys, though rosewood and sandalwood are also occasionally used.This traditional craft is protected as a geographical indication(GI)under the World Trade Organization, administered by the Government of Karnataka.As a popularity of these toys,Channapatna is known as Gombegala Ooru(toy-town) of Karnataka.</p>
+                                <h4 class=" " >Tourist Destinations</h4>
+                                <h4 class=" " >Ambegalu Navaneeta Krishna Temple</h4>
+                                <p class=" " >The temple of Aprameya was bulit in the 11th century by Chola Emperor Rajendra Simha.The temple is named after the chola general Aprameya.Dodda Mallur is a village in channapatna Taluk in Ramanagara district in the Indian state of Karnataka.Mallur is located on the banks of the river Kanva.The village is famous for its temples of Sri Ramaprameya Swamy, Aravindavalli and Ambegalu Navaneeta Krishna(Crawling Krishna).This idol was installed by Vyasaraja (aka Vyasatirtha), who was a prominent saint of Dvaita Vedanta. The famous &quot;Jagadodharana Adisidale Yashode&quot; was composed by most prominent composer of carnatic music Purandaradasa in appreciation of the beauty of this idol.Dodda Mallur is located between Bangalore and Mysore.Its 60 km from Bangalore and approximately 80 km from Mysore. It is 2 km from Channapatna.</p>
+                                <h4 class=" " >Sri Kengal Anjaneyaswamy Temple</h4>
+                                <p class=" " >Kengal Anjaneya Swamy temple was bulit during the period of Karnataka&#39;s 2nd chief minister, Sri Kengal Hanumanthaiah who is also the chief architect behind Vidhana Soudha, the legislature building in Bangalore. This temple is older than 60 years. This place is surrounded by rocky hills. The name &quot;Kengal&quot; in kannada means &#39;redstone&#39; from which the idol is emerging from,hence the lord is called &quot;Kengal Anjeneya Swamy&quot; also known as &quot;kengal Hanumantha&quot;.Kengal Anjaneya Swamy temple is situated in channapatna, Ramanagara district, around 50 km from Bangalore.</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section photo-grid-section" data-section-behavior="crisp-photo-grid" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                <div class="photo-grid">
+                  <div class="photo-group-container">
+                    <div class="photo-group t2-layout-pl-1">
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="blob:https://spark.adobe.com/278b9f65-3b9d-4c20-bc13-c3fb11d3af66" data-src="blob:https://spark.adobe.com/278b9f65-3b9d-4c20-bc13-c3fb11d3af66" data-image-width="384" data-image-height="512"><span class="background-image-placeholder-link" data-href="blob:https://spark.adobe.com/278b9f65-3b9d-4c20-bc13-c3fb11d3af66"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="blob:https://spark.adobe.com/c89ff527-f302-494b-95d2-148e2124f832" data-src="blob:https://spark.adobe.com/c89ff527-f302-494b-95d2-148e2124f832" data-image-width="1529.7852474323063" data-image-height="1024"><span class="background-image-placeholder-link" data-href="blob:https://spark.adobe.com/c89ff527-f302-494b-95d2-148e2124f832"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <h4 class=" " >Janapada Loka</h4>
+                                <p class=" " >Janapada Loka or &quot;Folk world&quot; or &quot;Folk-culture World&quot; is a folk museum that has an exclusive display of the village folk arts of Karnataka.It is under the aegis of the Karnataka Janapada Parishat. The concept of establishing a museum to exhibit the rich folk art and culture of Karnataka was the brain-child of H.L Nage Gowda, a civil-servant by profession and also a folklorist, who, after retirement, made it his lifetime goal. It was established on 12th march 1994,creating a village ambiance with lush green vegetation over 15-acre campus. It is situated in Channapatna, Ramanagara district in the Indian state of Karnataka, on the Bangalore-Mysore highway, 53 kilometres to the south of Bangalore.</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section photo-grid-section" data-section-behavior="crisp-photo-grid" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                <div class="photo-grid">
+                  <div class="photo-group-container">
+                    <div class="photo-group t4-layout-pppp-1">
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/67a46737-11e4-43e1-a24e-20a60e004ab9.jpg?asset_id=ef48f794-ab14-4738-844d-fb018bfcf36c&img_etag=%22a3b9c95a6877a0795528bc88eae772fb%22&size=500" data-src="images/67a46737-11e4-43e1-a24e-20a60e004ab9.jpg?asset_id=ef48f794-ab14-4738-844d-fb018bfcf36c&img_etag=%22a3b9c95a6877a0795528bc88eae772fb%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/67a46737-11e4-43e1-a24e-20a60e004ab9.jpg?asset_id=ef48f794-ab14-4738-844d-fb018bfcf36c&img_etag=%22a3b9c95a6877a0795528bc88eae772fb%22&size=512"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/da26ebe9-a136-4d14-8708-22f89e66decf.jpg?asset_id=e986c2d5-73d7-48dc-828e-7488a4b448b6&img_etag=%224cc792e64f847c9d1aec2760ae09a88c%22&size=500" data-src="images/da26ebe9-a136-4d14-8708-22f89e66decf.jpg?asset_id=e986c2d5-73d7-48dc-828e-7488a4b448b6&img_etag=%224cc792e64f847c9d1aec2760ae09a88c%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/da26ebe9-a136-4d14-8708-22f89e66decf.jpg?asset_id=e986c2d5-73d7-48dc-828e-7488a4b448b6&img_etag=%224cc792e64f847c9d1aec2760ae09a88c%22&size=512"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/d5b5d92a-a156-4034-bc64-4e8e837f001e.jpg?asset_id=79d7407e-e3c2-4de3-a269-2b3dbe6168ec&img_etag=%224ab7a91507bb0e8e2b42a4f07d9e7cc0%22&size=500" data-src="images/d5b5d92a-a156-4034-bc64-4e8e837f001e.jpg?asset_id=79d7407e-e3c2-4de3-a269-2b3dbe6168ec&img_etag=%224ab7a91507bb0e8e2b42a4f07d9e7cc0%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/d5b5d92a-a156-4034-bc64-4e8e837f001e.jpg?asset_id=79d7407e-e3c2-4de3-a269-2b3dbe6168ec&img_etag=%224ab7a91507bb0e8e2b42a4f07d9e7cc0%22&size=512"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/7aec5773-84bf-439c-a163-d4e6c68a81a7.jpg?asset_id=b15fccb7-2248-44d1-b98a-1ea4ed228936&img_etag=%22a06fac51c6ccd19413e9e42c059f1834%22&size=500" data-src="images/7aec5773-84bf-439c-a163-d4e6c68a81a7.jpg?asset_id=b15fccb7-2248-44d1-b98a-1ea4ed228936&img_etag=%22a06fac51c6ccd19413e9e42c059f1834%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/7aec5773-84bf-439c-a163-d4e6c68a81a7.jpg?asset_id=b15fccb7-2248-44d1-b98a-1ea4ed228936&img_etag=%22a06fac51c6ccd19413e9e42c059f1834%22&size=512"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-bottom" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <p class=" " >Visualize where is Channapatna in India,Click on the images below</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section split-layout image-on-left" data-section-behavior="crisp-split-layout" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-background">
+             <div class="section-background-image" style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="images/b5e04cf4-540c-44d2-8e4a-b24a39054063.jpg?asset_id=47f27cc2-521f-475a-bcca-9f6916915e8d&amp;img_etag=%222df13c65f570f48c71cae3d35b697f88%22&amp;size=1024" data-image-width="500" data-image-height="500"></a></div>
+          </div>
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                      <div class="image">
+                  <div class="image-wrapper">
+                    <a href="images/67a08a2d-2858-4e00-9c86-ea4a1b571680.jpg?asset_id=2bf3a3c2-a244-42ce-acf2-011ac202c264&amp;img_etag=%224b558de9f1af32ced6af3dcdfb484c64%22&amp;size=1024" class="image-viewer-link" target="_blank" rel="nofollow noreferrer"><span class="image-placeholder-link" data-href="images/67a08a2d-2858-4e00-9c86-ea4a1b571680.jpg?asset_id=2bf3a3c2-a244-42ce-acf2-011ac202c264&amp;img_etag=%224b558de9f1af32ced6af3dcdfb484c64%22&amp;size=1024" style="width: 500px; padding-top: 100%" data-image-width="500" data-image-height="500"></span></a>
+                  </div>
+                </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-top" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                        <div class="link-button-wrapper link-left">
+                    <a class="link-button "  href="https://www.bing.com/maps?&ty=17&q=channapatna%20tourist%20places&mb=12.874392~76.991539~12.511882~77.400963&ppois=12.834582328796387_77.40096282958984__~12.753179550170898_77.30130004882812__~12.639060020446777_77.1414794921875__~12.511881828308105_77.08784484863281__~12.874391555786133_77.33726501464844__~12.70135498046875_77.25164794921875__~&poicount=11&usebfpr=true&v=2&sV=1" rel="nofollow noreferrer">Click here to view channapatna in google map</a>
+                  </div>
+                                <h3 class=" " >Kasaragod</h3>
+                                <h4 class=" " >Sapta Bhasaha Sangama Bhoomi:Blog by Sudhamshu B N</h4>
+                                <h4 class=" " >Kasaragod</h4>
+                                <p class=" " >Kasaragod is one of the most scenic and charming districts of Kerala where nature oozes out breathtaking beauty. It showcases a marvelous amalgamation of dazzling beaches, glittering rivers, opulent green hills, and historical structures. The district is well-linked with the entire Kerala and country by various modes of transportation.</p>
+                                <p class=" " >Malayalam,Tulu, Beary, Konkani, Kannada,Urdu and Marathi are the seven languages spoken here. It is part of Kerala State so Malayalam is an administrative language here and most spoken language followed by Tulu, Konkani and Kannada.</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section photo-grid-section" data-section-behavior="crisp-photo-grid" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                <div class="photo-grid">
+                  <div class="photo-group-container">
+                    <div class="photo-group t4-layout-pppp-1">
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/36a2ec1a-b5be-41b4-a475-f0bba4db9125.jpg?asset_id=6786436e-68c4-494f-881e-4bac5d817055&img_etag=%2263c63c71394deafc00e915052723024b%22&size=500" data-src="images/36a2ec1a-b5be-41b4-a475-f0bba4db9125.jpg?asset_id=6786436e-68c4-494f-881e-4bac5d817055&img_etag=%2263c63c71394deafc00e915052723024b%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/36a2ec1a-b5be-41b4-a475-f0bba4db9125.jpg?asset_id=6786436e-68c4-494f-881e-4bac5d817055&img_etag=%2263c63c71394deafc00e915052723024b%22&size=512"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/87f6792f-b458-412f-9d85-d8c341fbdbfe.jpg?asset_id=930fb88b-9d73-433b-af3e-6619510f6594&img_etag=%22cd7eb99a2e0201031739af02875480b8%22&size=500" data-src="images/87f6792f-b458-412f-9d85-d8c341fbdbfe.jpg?asset_id=930fb88b-9d73-433b-af3e-6619510f6594&img_etag=%22cd7eb99a2e0201031739af02875480b8%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/87f6792f-b458-412f-9d85-d8c341fbdbfe.jpg?asset_id=930fb88b-9d73-433b-af3e-6619510f6594&img_etag=%22cd7eb99a2e0201031739af02875480b8%22&size=512"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/81486ece-7bf4-41ce-9d25-69980badcd6d.jpg?asset_id=f7aa04fb-c345-44f6-bb89-d9c530359822&img_etag=%22c8448966fdca69ae237bbcca517480ab%22&size=500" data-src="images/81486ece-7bf4-41ce-9d25-69980badcd6d.jpg?asset_id=f7aa04fb-c345-44f6-bb89-d9c530359822&img_etag=%22c8448966fdca69ae237bbcca517480ab%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/81486ece-7bf4-41ce-9d25-69980badcd6d.jpg?asset_id=f7aa04fb-c345-44f6-bb89-d9c530359822&img_etag=%22c8448966fdca69ae237bbcca517480ab%22&size=512"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/cfb7bd81-6f8e-4a63-be16-fc16c6cf540a.jpg?asset_id=9d96c3b5-3e1f-44f4-bcb6-1f4f7ee0fb9d&img_etag=%2242130578ba2a8b084e3b022b76027508%22&size=500" data-src="images/cfb7bd81-6f8e-4a63-be16-fc16c6cf540a.jpg?asset_id=9d96c3b5-3e1f-44f4-bcb6-1f4f7ee0fb9d&img_etag=%2242130578ba2a8b084e3b022b76027508%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/cfb7bd81-6f8e-4a63-be16-fc16c6cf540a.jpg?asset_id=9d96c3b5-3e1f-44f4-bcb6-1f4f7ee0fb9d&img_etag=%2242130578ba2a8b084e3b022b76027508%22&size=512"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="photo-group-container">
+                    <div class="photo-group t2-layout-pp-1">
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/a9761f3f-fb25-4430-98e5-190928d6be09.jpg?asset_id=9d3607b4-d603-4c39-abce-5ddbc665b429&img_etag=%22dfcbdcc80827f29d91c50036effab722%22&size=500" data-src="images/a9761f3f-fb25-4430-98e5-190928d6be09.jpg?asset_id=9d3607b4-d603-4c39-abce-5ddbc665b429&img_etag=%22dfcbdcc80827f29d91c50036effab722%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/a9761f3f-fb25-4430-98e5-190928d6be09.jpg?asset_id=9d3607b4-d603-4c39-abce-5ddbc665b429&img_etag=%22dfcbdcc80827f29d91c50036effab722%22&size=512"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="images/c1aced73-4899-4da7-a6df-76c16f005da1.png?asset_id=a7eb6b82-1f3f-4df9-9e66-fba5a61707f3&img_etag=%22afdc1a8498ee1bbbc69e6163a4a76030%22&size=500" data-src="images/c1aced73-4899-4da7-a6df-76c16f005da1.png?asset_id=a7eb6b82-1f3f-4df9-9e66-fba5a61707f3&img_etag=%22afdc1a8498ee1bbbc69e6163a4a76030%22&size=500" data-image-width="500" data-image-height="500"><span class="background-image-placeholder-link" data-href="images/c1aced73-4899-4da7-a6df-76c16f005da1.png?asset_id=a7eb6b82-1f3f-4df9-9e66-fba5a61707f3&img_etag=%22afdc1a8498ee1bbbc69e6163a4a76030%22&size=512"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="caption-container">
+                    <div class="grid-caption ">Culture</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-bottom bottom-shadow" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <h4 class=" " >Tourist Destinations</h4>
+                                <h4 class=" " >Bekal Fort</h4>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Nestled in the lap of nature, Bekal Fort is a historic fort surrounded by a beautiful beach offering an enchanting view of Arabian Sea from its high observation tower where once the cannons were placed. The beautiful walkway, illuminated beach and the grand architecture of the Bekal Fort make this place a favourite among the masses.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Bekal fort, the largest and the best-preserved fort in Kerala, lies 16 Kms south of Kasaragod on the national highway at the northern tip of the state. The fort, a circular imposing structure of laterite rising 130 ft above sea level, stands on a 35 acre headland that runs into the Arabian sea.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Bekal Fort is one of the most visited attractions in North Kerala. Overlooking Arabian Sea, the Fort provides beautiful view of the sea. It was Tipu Sultan military station when he led a military expedition to dominate Malabar.</p>
+                                <h4 class=" " >Ananthapura Lake Temple</h4>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Ananthapadmanabhaswamy Temple or Anantha Lake Temple is a Hindu temple built in the middle of a lake in the little village of Ananthapura, around 6 km from the town of Kumbla in Manjeswaram taluk of Kasaragod District of Kerala.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >In the northern tip of Kerala lies the Ananthapura Lake Temple, the only lake temple in Kerala. The rectangular lake, supplied with regular spring water, hosts this magnificent temple. It is considered the moolasthanam (original abode) of Lord Ananthapadmanabha, the deity of the famous Sree Padmanabhaswamy Temple in Thiruvananthapuram.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >This 9th-century temple situated 30 km from Bekal in Kasaragod district. The view of the hillocks from the temple is extremely famous. Babia, the vegetarian crocodile and temple guardian, is popular among all the visitors. The drive to the temple in itself is extremely peaceful and calming.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Visit the website:- http:&#x2F;&#x2F;ananthapuratemple.com&#x2F;</p>
+                                <h4 class=" " >Madhur Temple</h4>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Madhur temple is located on the banks of River Madhuvahini at a distance of about eight kilometres from Kasaragod town. Though the name Madhur Ananteshwara Vinayaka temple suggests that the deity is Lord Ganapathy, the temple is actually dedicated to Anantheswara, a manifestation of Lord Shiva.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >It is clear that the temple is a vast storehouse of vaastu architecture, sculptural art as well as carvings from the epics and folk tales and rightfully needs to be preserved for the benefits of future generations. As per the observations of foreign pilgrims, it is world class and comparable to any sculptural art worldwide.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >The temple architecture is of 3-tiered gajaprishta type resembling the back of an elephant. One can also find beautiful wooden carvings depicting scenes from the Ramayana.The vast spacious gopurams give good ambiance for the devotees to relax and enjoy the Ganapathi`s presence.</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fullscreen-photo-section  caption-left" data-section-behavior="crisp-fullscreen-photo" data-layer="-1" data-layer-name="under" data-zoom-start="" data-zoom-stop="" data-zoom-to="" data-zoom-from="" data-fixed="">
+        <div class="section-view">
+          <div class="section-background">
+            <div role="img" class="section-background-image" style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="images/a3ccb621-0406-490f-9407-01a3eb7995b6.jpg?asset_id=935fbc47-c9ce-46ad-be67-40cdc43d19b1&img_etag=%220036e308bbca3a2ca730933d8d4ac6b0%22&size=1024" data-image-width="1204" data-image-height="903"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-top large-content-spacing-bottom top-shadow bottom-shadow" data-section-behavior="crisp-single-column" data-layer="1" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <p class=" " >Bekal Beach</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Bekal Beach Situated on the broad expanse of the Malabar coastline, Bekal beach is popular for its backwaters, forts and scenic beauty. It&#39;s a very small region on the shores of Arabian Sea, which is known for its unparalleled charm that holds various attractions and offers a perfect traditional Keralite hospitality to its visitors.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Much effort has been put to develop a beautiful beach here called the Bekal Fort Beach. People flock to these spots in great numbers. Situated comfortably on steep hills by the sea, the fort provides for an imposing view from the beach. Built using laterite slabs and with a polygonal shape, it is amongst the most visited sites in Kerala.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Bekal beach is an ideal place to pick up traditional Kasaragod sarees, spices, aromatic oil, coir artifacts, bell-metal vessels, coconut products and other local collectibles from the several opulent and affordable shops lining the beach</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fullscreen-photo-section  caption-left" data-section-behavior="crisp-fullscreen-photo" data-layer="-1" data-layer-name="under" data-zoom-start="" data-zoom-stop="" data-zoom-to="" data-zoom-from="" data-fixed="">
+        <div class="section-view">
+          <div class="section-background">
+            <div role="img" class="section-background-image" style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="blob:https://spark.adobe.com/f639ba04-dc13-405c-bb64-ea4ede56e99c" data-image-width="1079" data-image-height="710"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-top large-content-spacing-bottom top-shadow bottom-shadow" data-section-behavior="crisp-single-column" data-layer="1" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <p class=" " >Ranipuram</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >The gentle hills of Ranipuram in Kerala are famous for its trekking trail. Situated at the height of about 750 meters above sea level, this destination has thick forest vegetation and lush green grasslands. The whole place is proposed inside the Ranipuram Wildlife Sanctuary which merges with Talakaveri Wildlife Sanctuary of Karnataka.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Ranipuram hills is an attractive destination located in the Kasaragod district. The region, once known as Madathumala, shares it borders with Karnataka. Dubbed as the &quot;Ooty of Kerala&quot;, Ranipuram hills is renowned for its cool climate, deep woods and enthralling trekking trails.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Ranipuram is a hill station and a tourist Centre in the Indian state of Kerala. Situated in the Vellarikundu taluk, Kasargod District.</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fullscreen-photo-section  caption-left" data-section-behavior="crisp-fullscreen-photo" data-layer="-1" data-layer-name="under" data-zoom-start="" data-zoom-stop="" data-zoom-to="" data-zoom-from="" data-fixed="">
+        <div class="section-view">
+          <div class="section-background">
+            <div role="img" class="section-background-image" style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="blob:https://spark.adobe.com/4d870e70-fc2a-41da-b837-16d876b81613" data-image-width="1600" data-image-height="1062"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-top large-content-spacing-bottom top-shadow bottom-shadow" data-section-behavior="crisp-single-column" data-layer="1" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                          <p class=" " >Kappil Beach</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Kappil Beach is a stunning beach in Kerala, God&#39;s own country. Kappil Beach is blessed with natural beauty and a lovely beach. Kappil Beach is very clean, moderately shallow and attracts many tourists as it provides them with opportunities of swimming and sunbathing. If you are lucky you can also get a glimpse of the Dolphins here.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Kappil beach is a dazzling beach located about 15 kilometres from Kasaragod, in God&#39;s own country, the South Indian State of Kerala. This bewitching beach is one of the few in India which still has an expansive area of golden sand and clear blue waters of the Arabian Sea explored by many travel enthusiasts but not exploited as yet.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >Traveller&#39;s Paradise, An amazing beach with a wonderful view. This beach is just near to the main road and when passing through this road, a wonderful sight of sea is seen. The backwaters on the other side of this road increases the beauty.</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fullscreen-photo-section  caption-left" data-section-behavior="crisp-fullscreen-photo" data-layer="-1" data-layer-name="under" data-zoom-start="" data-zoom-stop="" data-zoom-to="" data-zoom-from="" data-fixed="">
+        <div class="section-view">
+          <div class="section-background">
+            <div role="img" class="section-background-image" style="background-position: 50% 50%;"><a class="background-image-placeholder-link" href="blob:https://spark.adobe.com/597147bc-e4cf-4ed8-b5d2-6cbdf5419e9e" data-image-width="1084" data-image-height="720"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section photo-grid-section  large-content-spacing-top top-shadow" data-section-behavior="crisp-photo-grid" data-layer="1" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                <div class="photo-grid">
+                  <div class="photo-group-container">
+                    <div class="photo-group t2-layout-pp-1">
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="blob:https://spark.adobe.com/01036913-e1a9-4353-a259-28a709a22e49" data-src="blob:https://spark.adobe.com/01036913-e1a9-4353-a259-28a709a22e49" data-image-width="725" data-image-height="750"><span class="background-image-placeholder-link" data-href="blob:https://spark.adobe.com/01036913-e1a9-4353-a259-28a709a22e49"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="blob:https://spark.adobe.com/8105bd3e-0298-4b5e-bb3b-3f6e7ed50e54" data-src="blob:https://spark.adobe.com/8105bd3e-0298-4b5e-bb3b-3f6e7ed50e54" data-image-width="362" data-image-height="599"><span class="background-image-placeholder-link" data-href="blob:https://spark.adobe.com/8105bd3e-0298-4b5e-bb3b-3f6e7ed50e54"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                        <div class="link-button-wrapper link-left">
+                    <a class="link-button "  href="https://www.bing.com/maps?&ty=17&q=kasaragod%20tourist%20places&mb=12.59456~74.948349~12.30025~75.111862&ppois=12.392431259155273_75.03330993652344__~12.584182739257812_74.9820785522461__~12.563929557800293_75.021728515625__~12.553413391113281_75.00997924804688__~12.307648658752441_75.09112548828125__~12.427149772644043_75.01197052001953__~&poicount=19&usebfpr=true&v=2&sV=1" rel="nofollow noreferrer">click here to view Kasaragod in google maps</a>
+                  </div>
+                                <h4 class=" " >How to reach Kasaragod</h4>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >By Air: You can reach the city By Air where the nearest airport from Kasaragod is at Mangalore, which is about 50 km away while the Kochi Airport is 420 km south.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >By Road: If you are from Bangalore then you have direct buses from Majestic. Which can be booked online at www.ksrtc.in you also have kerala.r.t.c buses also.</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >NH17 passes through the Kasaragod district. One can reach the district easily from Kannur side as it enters the district at Kalikadavu. The highway passes through the main towns such as Kanhangad (28km), Kumbla (14km) and then enters Karnataka state at Thalappadi (35km) and reaches Mangalore (55km).</p>
+                                <p class=" " >◾️◾️◾️◾️◾️</p>
+                                <p class=" " >By Train:Railway line passes equivalent to the coastal line. The major Railway stations near the district include Trikaripur, Cheruvathur, Nileshwar, Kanhangad, Kasargod, Kumbla, Uppla and Manjeshwar. Almost each Express train stops here in the district.</p>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section photo-grid-section" data-section-behavior="crisp-photo-grid" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                <div class="photo-grid">
+                  <div class="photo-group-container">
+                    <div class="photo-group t2-layout-pp-1">
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="blob:https://spark.adobe.com/4093ee53-d01b-472c-8935-c50ffdda2d3b" data-src="blob:https://spark.adobe.com/4093ee53-d01b-472c-8935-c50ffdda2d3b" data-image-width="599" data-image-height="941"><span class="background-image-placeholder-link" data-href="blob:https://spark.adobe.com/4093ee53-d01b-472c-8935-c50ffdda2d3b"></span></a>
+                      </div>
+                      <div class="photo-container tile">
+                        <a aria-label="thumbnail image" class="photo-image" href="blob:https://spark.adobe.com/58cacda2-66b9-4093-8e78-367260f02c72" data-src="blob:https://spark.adobe.com/58cacda2-66b9-4093-8e78-367260f02c72" data-image-width="400" data-image-height="400"><span class="background-image-placeholder-link" data-href="blob:https://spark.adobe.com/58cacda2-66b9-4093-8e78-367260f02c72"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section single-column-section  large-content-spacing-bottom" data-section-behavior="crisp-single-column" data-layer="0" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                        <div class="link-button-wrapper link-left">
+                    <a class="link-button "  href="https://www.linkedin.com/in/sudhamshu-b-n-760bb7171/" rel="nofollow noreferrer">Sudhamshu B N: LinkedIn</a>
+                  </div>
+                              <div class="link-button-wrapper link-left">
+                    <a class="link-button "  href="https://twitter.com/sudhamshu_b_n" rel="nofollow noreferrer">Sudhamshu B N: Twitter</a>
+                  </div>
+                              <div class="link-button-wrapper link-left">
+                    <a class="link-button "  href="https://github.com/sudhamshu091" rel="nofollow noreferrer">Sudhamshu B N: Github</a>
+                  </div>
+                              <div class="link-button-wrapper link-left">
+                    <a class="link-button "  href="https://www.linkedin.com/in/rajasudhan-s-a-76abba18a/" rel="nofollow noreferrer">Rajasudhan S A : LinkedIn</a>
+                  </div>
+                              <div class="link-button-wrapper link-left">
+                    <a class="link-button "  href="https://github.com/Rajasudhangowda321" rel="nofollow noreferrer">Rajasudhan S A: Github</a>
+                  </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section author-section" data-section-behavior="crisp-author" data-layer-name="over">
+        <div class="section-view">
+          <div class="section-content">
+            <div class="section-content-view">
+              <div class="content-container">
+                <div class="author-appreciation-container">
+                  <a href="https://spark.adobe.com/page/R9eYAGswYvl5h" class="button appreciate-button">Appreciate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--BUMPER-SECTION-TOP-LEVEL-START-->
+      <div class="section bumper-section default-bumper-section" data-layer-name="over">
+          <div class="section-view">
+              <!--FOOTER-START-->
+              <div class="footer">
+                  <a class="tos" target="_blank" href="http://www.adobe.com/legal/terms.html" rel="nofollow">Terms of Service</a>
+                  <a class="privacy" target="_blank" href="http://www.adobe.com/go/privacy" rel="nofollow">Privacy Policy</a>
+                  <a class="js-report-abuse" href="#" target="_blank" rel="nofollow">Report Abuse</a>
+              </div>
+              <!--FOOTER-END-->
+          </div>
+      </div>
+      <!--BUMPER-SECTION-TOP-LEVEL-END-->
 </div>
-    <div class="mrvl-header-wrapper">
-        <div class="mrvl-header-bg"></div>
-        <header class="mrvl-header">
-            <button class="glb-nav-hamburger fouc" data-auto="glb-nav-hamburger" tabindex="0"></button>
-            <a class="mrvl-logo-link" href="/"><p class="mrvl-logo" data-auto="brand-logo">Adobe Spark<span class="mrvl-logo-preload"></span></p></a>
-
-            <span class="site-nav-upgrade pricing-button" id="site-nav-upgrade-pricing-button" data-auto="site-nav-upgrade" data-analytics-context="marketingNav">
-                Make an impression. <a href='/sp/i-pricing?touchpointName=user-menu' target="_blank" class='site-nav-link site-nav-link-upgrade'>Upgrade</a>
-            </span>
-
-            <div class="mrvl-mrkt-nav simple-nav fouc">
-                <a href="/features" class="mrvl-mrkt-nav-link mrkt-nav-features" data-aa-name="features" data-auto="site-nav-features-simple">Features</a>
-                <a href="/pricing/" class="mrvl-mrkt-nav-link mrkt-nav-pricing pricing-button" data-aa-name="pricing" data-auto="site-nav-pricing-simple" data-analytics-context="marketingNav">Pricing</a>
-                <a href="/blog" class="mrvl-mrkt-nav-link mrvl-mrkt-nav-blog" data-aa-name="blog" data-auto="mrvl-mrkt-nav-blog-simple">Blog</a>
-                <div class="mrvl-mrkt-learn-more-drop">
-                    <a class="mrvl-mrkt-nav-link mrvl-mrkt-nav-learn-more" data-auto="mrvl-mrkt-nav-learn-more-simple">Learn more</a>
-                    <ul class="mrvl-mrkt-nav-learn-more-features">
-                        <li><a href="/spark-for-business/" class="mrvl-mrkt-nav-link mrvl-mrkt-learn-more-link mrvl-mrkt-feature-link-spark-for-business" data-aa-name="spark-for-business" data-auto="link-spark-for-business-simple">Spark for Business</a></li>
-                        <li><a href="/edu/" class="mrvl-mrkt-nav-link mrvl-mrkt-learn-more-link mrvl-mrkt-feature-link-spark-in-the-classroom" data-aa-name="spark-in-the-classroom" data-auto="link-spark-in-the-classroom">Spark for Education</a></li>
-                        <li><a href="make/" class="mrvl-mrkt-nav-link mrvl-mrkt-learn-more-link mrvl-mrkt-feature-link-make-design" data-aa-name="make-design" data-auto="link-make-design">Make a Design</a></li>
-                        <li><a href="templates/" class="mrvl-mrkt-nav-link mrvl-mrkt-learn-more-link mrvl-mrkt-feature-link-templates" data-aa-name="templates" data-auto="link-templates">Templates</a></li>
-                        <li><a href="https://adobespark.zendesk.com/hc/en-us/categories/202688167-Adobe-Spark" class="mrvl-mrkt-nav-link mrvl-mrkt-learn-more-link glb-support-link fouc" target="_blank" data-auto="mrvl-mrkt-nav-support" data-aa-name="about-support">Support</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="search-in-main-header hide"></div>
-            <div class="main-header-search-results search-results-grid-view-holder search-view-common hide" data-auto="search-results-grid-holder"></div>
-            <div class="appboy-content-cards">
-                <div class="appboy-content-cards-icon fouc hide"></div>
-                <div class="appboy-content-cards-view"></div>
-                <div class="appboy-content-cards-overlay hide"></div>
-            </div>
-            <div class="mrvl-utility-nav-container"></div>
-            <div class="nav-cta-actions">
-                <a target="_parent" href="/sp/" data-analytics-context="marketingNav" class="mrvl-mrkt-nav-cta-btn legacy-nav-grp mrvl-mrkt-nav-logged-out-cta signup-cta mrvl-mrkt-nav-start-now fouc signup-cta" data-auto="mrvl-mrkt-nav-start-now">Start now</a>
-            </div>
-        </header>
-        <div class="active-authoring-context fouc hide"></div>
-    </div>
-    <div class="glb-nav-menu"></div>
-    <div class="mrvl-main-page"></div>
-    <div class="new-project-overlay hide"></div>
-    <div class="verify-email-overlay hide"></div>
-    <div class='preview-overlay hide' id='preview-overlay'></div>
-    <div class='preview-overlay hide' id='preview-overlay-fs'></div>
-    <div class='preview-overlay hide' id='preview-overlay-elv'></div>
-    <div class='item-preview-overlay hide'></div>
-    <div class='confirm-overlay hide'></div>
-    <div class='lms-integration-dialog-overlay hide'></div>
-    <div class='upgrade-overlay-holder needs-showing hide'></div>
-    <div class="cross-format-overlay"></div>
-    <div class="cross-workflow-overlay"></div>
-    <div class="lg-dialog-overlay hide"></div>
-    <div class="mkt-optin-overlay hide"></div>
-    <div class="personalizer-overlay hide"></div>
-    <div class="popup-wrapper hide"></div>
-    <div class="browser-unsupported hide">
-        <h2 class="browser-unsupported-title"></h2>
-        <h3 class="browser-unsupported-msg"></h3>
-        <div class="browser-unsupported-buttons">
-            <button class="browser-unsupported-continue-btn">Continue</button>
-            <button class="browser-unsupported-cancel-btn" onclick="location.href='/'">Cancel</button>
+</div>
+          </div>
         </div>
+      </div>
+      <a href="#" class="publication-viewer-next-link"></a> <a href="#" class="publication-viewer-previous-link"></a>
     </div>
-    <div class="inapp-merch-overlay"></div>
-    <div class="upgrade-congrats-overlay hide"></div>
-    <div class="nps-footer-wrapper hide"></div>
-    <div class="takeover-wrapper"></div>
-    <div class="popover-wrapper"></div>
-    <div class="popup-message-wrapper"></div>
-    <div class="spark-dialog-wrapper"></div>
-    <div class="messaging-modal-wrapper hide"></div>
-    <div class="bumper-wrapper"></div>
-    <div class="narrow-window-warning-wrapper"></div>
-    <div class="ccx-share-sheet-overlay hide"></div>
-    <div class="spark-toast-holder spectrum spectrum--light">
-        <div class="react-spectrum-ToastContainer react-spectrum-ToastContainer--bottom react-spectrum-ToastContainer--center"></div>
-    </div>
-    <div class="quick-task-host-container"></div>
-<script src="/static/locales/en-US_bundle-03b14986.js" defer></script>
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js').catch(error => {
-            console.warn("Couldn't register service worker:", error);
-        });
-    }
-</script>
+  </div>
+  <!-- javascripts go here -->
+    <script type="text/javascript">
+      window.useNewBumper = true;
+        window.brandType = 'default';
+    </script>
 
-<script src="/static/marvelcommon-bb979c0a.js" defer></script>
-
-
-
-<script>
-window._mrvlBundleRefs = [
-    '/theo-web/theo-web-app-entry_e2e93592-0b797cdc.js',
-];
-</script>
-
-<script src="/static/m-web-5e5421f9.js" defer></script>
-
-    <script src="/sp-storage/design/page/urn:aaid:sc:AP:98e15297-056f-4669-ab84-dcb69093ff93/preview?n=1616304300113" async defer></script>
+    <script type="text/javascript" src="https://page.adobespark-assets.com/runtime/1.22/runtime-prod.gz.js" charset="utf-8"></script>
+  <!--BEGIN-BUMPER-BEHAVIORS-->
+  <!--END-BUMPER-BEHAVIORS-->
 </body>
 </html>
