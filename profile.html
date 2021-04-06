@@ -321,10 +321,10 @@
 		
 					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
 						<h3>Single Cycle RISC Processor</h3>
-						<p>Trying to implement a single cycle MIPS computer in Verilog that supports MIPS assembly instructions including:
+						<p>Trying to implement a single cycle MIPS computer in Verilog that supports MIPS assembly instructions including:<br>
 
-- Memory-reference instructions load word <code>lw</code> and store word <code>sw</code>
-- Arithmetic-logical instructions <code>add</code>, <code>addi</code>, <code>sub</code>, <code>and</code>, <code>andi</code>, <code>or</code>, and <code>slt</code>
+- Memory-reference instructions load word <code>lw</code> and store word <code>sw</code><br>
+- Arithmetic-logical instructions <code>add</code>, <code>addi</code>, <code>sub</code>, <code>and</code>, <code>andi</code>, <code>or</code>, and <code>slt</code><br>
 - Jumping instructions branch-equal <code>beq</code> and jump <code>j</code></p>
 					</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
@@ -430,19 +430,30 @@
 				<div class="row">
 		
 					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
-						<h3>Simulating Massive MIMO and Small Cells</h3>
-						<p>Combining Massive MIMO and Small Cells can be an advantageous and interesting thing that we can do in 5G technology realisation. To improve the cellular energy efficiency, without sacrificing quality-of-service at the users, the network topology must be densified to enable higher spatial reuse. Analyze a combination of two densification approaches, namely massive multiple-input multiple-output base stations and small-cell access points. If the latter are operator-deployed,a spatial soft-cell approach can be taken where the multiple transmitters serve the users by joint non-coherent multiflow beamforming. Through this we are trying to minimize the total power consumption (both dynamic emitted power and static hardware power) while satisfying QoS constraints. This problem is proved to have a hidden convexity that enables efficient solution algorithms. Interestingly, the optimal solution promotes exclusive assignment of users to transmitters. Here are some promising simulation results showing how the total power consumption can be greatly improved by combining massive MIMO and small cells; this is possible with both optimal and low-complexity beamforming.</p>
-					</div>
+						<h3>Huffman Encoding and Decoding</h3>
+						<p>Implementing Huffman Encoding and Decoding Algorithm for text encoding/compression.
+						<h4>Huffman Encoding Algorithm</h4><br>
+
+Calculate the frequency of each character in the string.<br>
+
+Sort the characters in increasing order of the frequency. These are stored in a priority queue <br>
+
+Make each unique character as a leaf node<br>
+
+Create an empty node. Assign the minimum frequency to the left child of the new node created and assign  the second minimum frequency to the right child of the new node. Set the value of the new node as the sum of the above two minimum frequencies.<br>
+Remove these two minimum frequencies from the queue and add the sum into the list of frequencies.<br>
+Insert node new node into the tree.<br>
+Repeat steps 3 to 5 for all the characters.<br>
+For each non-leaf node, assign 1 to the left edge and 0 to the right edge.<br>
+						<h4>Huffman Decoding Algorithm</h4>
+
+To decode the encoded data we require Huffman tree and compressed code.<br>
+Iterate through the binary encoded  data,to find the corresponding encoded data.<br>
+</p>
+								</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
 						<div class="portfolio-thumb">
-						<img src="images/Total%20Power%20Consumption%20for%20single%20small%20cell.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
-						<div class="portfolio-thumb">
-						<img src="images/Power%20Per%20Subcarrier%20for%20no.%20of%20antennas%20at%20Base%20Station.jpg" class="img-responsive" alt="portfolio img">
+						<img src="images/huffman.jpg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
 							</div>
 						</div>
@@ -452,7 +463,7 @@
 				<div class="row">
 					<div class="col-md-2"></div>
 					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
-						<a href="https://github.com/sudhamshu091/Simulating-Massive-Multiple-Input-Multiple-Output-and-Small-Cells" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">View Project on Github</a>
+						<a href="https://github.com/sudhamshu091/Huffman-Encoding-and-Decoding/" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">View Project on Github</a>
 					</div>
 					<div class="col-md-2"></div>
 				</div>
